@@ -13,7 +13,12 @@ int compute(char* text) {
 }
 
 int main() {
+  printf("Enter secret key: ");
   gets(buff);
-  printf("%d", compute(buff));
+  if (compute(buff) == code) {
+    printf("ACCESS GRANTED");
+  } else {
+    printf("ACCESS DENIED");
+  }
   return 0;
 }
