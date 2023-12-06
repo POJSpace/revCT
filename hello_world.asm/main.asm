@@ -5,8 +5,8 @@ EXIT_CODE_OK equ 0
 
 
 section .data
-msg db "Hello World", 10
-len db 12
+msg: db "Hello World", 10
+len: db 12
 
 section .text
 
