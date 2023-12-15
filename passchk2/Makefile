@@ -1,5 +1,7 @@
+CFLAGS = -no-pie -fno-stack-protector 
+
 secure2: main.c Makefile
-	gcc $< -o $@ 
+	gcc $(CFLAGS) $< -o $@ 
 	
 .PHONY: clean 
 
